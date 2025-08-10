@@ -1,7 +1,7 @@
 <template>
 	<div v-show="showBanner && !$view.mobile" class="patreon-banner">
 		<div class="container">
-			<p class="patreon">Help with Composer Explorer's development and hosting costs. <a href="https://www.patreon.com/composerexplorer" target="_blank" class="patreon-link">Support us on Patreon! </a><a class="patreonclosebtn" @click="toggleBanner()">&times;</a></p>
+			<p class="patreon">Help with Vivacio's development and hosting costs. <a href="https://www.patreon.com/vivacio" target="_blank" class="patreon-link">Support us on Patreon! </a><a class="patreonclosebtn" @click="toggleBanner()">&times;</a></p>
 		</div>
 	</div>
 </template>

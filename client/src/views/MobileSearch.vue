@@ -166,7 +166,7 @@ export default {
     },
     // makeToast() {
     //   this.$bvToast.toast(`Get the App on Play Store`, {
-    //     href: 'https://play.google.com/store/apps/details?id=com.app.composerexplorer',
+    //     href: 'https://play.google.com/store/apps/details?id=com.app.vivacio',
     //     title: 'App available for Android',
     //     toaster: 'b-toaster-bottom-full',
     //     solid: true,

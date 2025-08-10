@@ -63,7 +63,7 @@ class SpotifyAPI(object):
             'Content-Type': 'application/json',
             'Authorization': 'Bearer {}'.format(session['spotify_token']),
         }
-        data = '{"name":"' + new_playlist + '","description":"Playlist created with ComposerExplorer.com"}'
+        data = '{"name":"' + new_playlist + '","description":"Playlist created with Vivacio.app"}'
         response = requests.post('https://api.spotify.com/v1/users/' + userid + '/playlists', headers=headers, data=data)
         return response
 

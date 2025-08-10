@@ -5,7 +5,7 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.app.composerexplorer",
+      "package_name": "com.app.vivacio",
       "sha256_cert_fingerprints": [
         "C4:3C:B1:A0:68:36:B6:07:45:E3:EB:6F:11:35:4C:CA:4B:78:38:28:5F:35:70:30:31:00:C3:70:EA:47:34:6C",
         "8D:DB:47:0F:B5:58:7A:51:B4:6E:47:DA:84:64:11:09:81:C4:35:03:BB:BF:86:79:05:C8:5D:B0:22:AB:6A:C1",

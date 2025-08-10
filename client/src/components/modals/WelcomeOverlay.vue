@@ -4,7 +4,7 @@
       <div id="welcome" class="jumbotron overlay">
         <div class="container">
           <h1>
-            <img :src="logoURL" class="d-inline-block align-top logo" alt="Composer Explorer" height="60px" />
+            <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="60px" />
           </h1>
           <p class="lead">
             Welcome to your Classical Music Portal. Explore composers from the Medieval to the present. <br />

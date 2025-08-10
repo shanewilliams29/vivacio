@@ -20,10 +20,7 @@ cache = Cache()
 moment = Moment()
 bootstrap = Bootstrap4()
 migrate = Migrate()
-# log = logging.Client(project='composer-explorer')
-
 sp = SpotifyAPI(Config.SPOTIFY_CLIENT_ID, Config.SPOTIFY_CLIENT_SECRET, Config.SPOTIFY_REDIRECT_URL)
-# twilio = Client(Config.TWILIO_SID, Config.TWILIO_AUTH_TOKEN)
 
 
 def create_app(config_class=Config):

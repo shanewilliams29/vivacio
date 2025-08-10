@@ -94,7 +94,7 @@ export default {
 
             // eslint-disable-next-line
             window.player = new Spotify.Player({
-                name: "Composer Explorer",
+                name: "Vivacio",
                 getOAuthToken: (cb) => {
                     cb(this.$auth.clientToken);
                 },

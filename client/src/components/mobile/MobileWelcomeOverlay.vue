@@ -4,7 +4,7 @@
       <div id="welcome" class="jumbotron overlay">
         <div class="container content disable-scrollbars">
           <h1>
-            <img :src="logoURL" class="d-inline-block align-top logo" alt="Composer Explorer" height="60px" />
+            <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="60px" />
           </h1>
           <h4>Welcome to your Classical Music Portal.</h4>
           <p class="lead">

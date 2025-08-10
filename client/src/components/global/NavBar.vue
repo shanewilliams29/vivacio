@@ -4,10 +4,10 @@
       <div class="container-fluid">
         <b-navbar type="dark" variant="dark">
           <b-navbar-brand v-if="!$view.mobile">
-            <img :src="logoURL" class="d-inline-block align-top logo" alt="Composer Explorer" height="40px" />
+            <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="40px" />
           </b-navbar-brand>
           <b-navbar-brand @click="$router.push('/mobile')" v-if="$view.mobile">
-            <img :src="logoURL" class="d-inline-block align-top logo" alt="Composer Explorer" height="40px" />
+            <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="40px" />
           </b-navbar-brand>
           <div v-if="!$view.mobile">
             <b-nav pills class="navbar-items buttons-nav">
@@ -156,13 +156,13 @@
       <div>
         <b-sidebar id="sidebar-right" title="" backdrop-variant="dark" width="350px" backdrop right shadow>
           <div class="px-3 py-0 sidebar-text">
-            <h6>Composer Explorer</h6>
+            <h6>Vivacio</h6>
             <p>Welcome to your Classical Music Portal. Explore composers from the Medieval to the present. Listen to works on Spotify, made navigable for Classical music.</p>
             <h6>Usage</h6>
             <p>Log in with your <b>Spotify Premium</b> account to play music. Add performances to your favorites and create your own customized radios.</p>
             <p v-if="false">
               <span style="color: red;"><b>Android App:</b></span> Battery optimizations may stop playback (such as when phone is locked). Enable unrestricted battery access to the app in your phone's settings:
-              <span style="color: darkblue;">Settings > Apps > Composer Explorer > Battery > Unrestricted</span>.
+              <span style="color: darkblue;">Settings > Apps > Vivacio > Battery > Unrestricted</span>.
             </p>
             <h6>Acknowledgements</h6>
             <p v-if="!$view.mobile">
@@ -171,24 +171,24 @@
             </p>
             <h6 v-if="!$view.mobile">Donations</h6>
             <p v-if="!$view.mobile">
-              Composer Explorer is offered as a free and ad-free experience. If you would like to support the costs of hosting and development, please sponsor us on <a href="https://www.patreon.com/composerexplorer" target="_blank">Patreon</a>.
+              Vivacio is offered as a free and ad-free experience. If you would like to support the costs of hosting and development, please sponsor us on <a href="https://www.patreon.com/vivacio" target="_blank">Patreon</a>.
             </p>
             <p v-if="$view.mobile">
               Composer and work information is used under licence from Wikipedia, IMSLP, and Open Opus. Album data and cover art provided by Spotify.
             </p>
             <h6>Disclaimer</h6>
             <p>
-              ComposerExplorer.com is not associated with Spotify Technology SA. Artist, album and track records are retrieved through the Spotify search API and do not necessarily represent the full extent of the Spotify catalogue for a
+              Vivacio.app is not associated with Spotify Technology SA. Artist, album and track records are retrieved through the Spotify search API and do not necessarily represent the full extent of the Spotify catalogue for a
               given work. No guarantee is made as to the accuracy of catalogued composer and work information, and use is recommended for recreational purposes only.
             </p>
             <h6 v-if="!$view.mobile">GitHub</h6>
-            <p v-if="!$view.mobile">For feature requests and bug reports: <a href="https://github.com/shanewilliams29/composer-explorer-vue/issues" target="_blank">GitHub</a>.</p>
+            <p v-if="!$view.mobile">For feature requests and bug reports: <a href="https://github.com/shanewilliams29/vivacio/issues" target="_blank">GitHub</a>.</p>
             <h6>Contact</h6>
-            <p v-if="!$view.mobile">For all inquiries, please contact: <a href="mailto:composerexplorer@gmail.com">composerexplorer@gmail.com</a></p>
-            <p v-if="$view.mobile">For all inquiries, please contact: composerexplorer@gmail.com</p>
+            <p v-if="!$view.mobile">For all inquiries, please contact: <a href="mailto:vivacioapp@gmail.com">vivacioapp@gmail.com</a></p>
+            <p v-if="$view.mobile">For all inquiries, please contact: vivacio@gmail.com</p>
             <h6>Copyright</h6>
             <p>
-              © 2022 ComposerExplorer.com. All rights reserved.
+              © 2025 Vivacio.app. All rights reserved.
             </p>
           </div>
         </b-sidebar>
