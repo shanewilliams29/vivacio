@@ -1,0 +1,72 @@
+/* Text sizing for mobile, override styles */
+>>> h6{
+  font-size: 16px !important;
+}
+>>> input{
+  font-size: 16px !important;
+}
+>>> .performer-search{
+  height: 31px !important;
+}
+>>> .card{
+  margin-bottom: 0px !important;
+}
+>>> .heading-text{
+  font-size: 16px !important;
+}
+>>> .form-control-sm{
+  font-size: 16px !important;
+}
+>>> .vs__selected{
+  font-size: 16px !important;
+}
+>>> .vs__search{
+  font-size: 16px !important;
+}
+>>> .composer-select {
+  font-size: 16px !important;
+}
+>>> .work-select {
+  font-size: 16px !important;
+}
+>>> .filter-select {
+  font-size: 16px !important;
+}
+>>> .selector {
+  font-size: 16px !important;
+}
+>>> .performer-search {
+  font-size: 16px !important;
+}
+>>> .performer-search >>> {
+  font-size: 16px !important;
+  --vs-font-size: 16px;
+}
+>>> .btn{
+  font-size: 16px !important;
+}
+>>> .cursor span{
+  font-size: 16px !important;
+}
+>>> .works-table span{
+  font-size: 16px !important;
+}
+>>> .works-table .heart-number span{
+  font-size: 12px !important;
+}
+
+>>> .album_text_columns .album-major-artists{
+  font-size: 16px !important;
+}
+
+>>> .album_text_columns .label{
+  font-size: 13px !important;
+}
+
+>>> .album_text_columns .label svg{
+  font-size: 10px !important;
+}
+
+>>> .album_text_columns .album-minor-artists{
+  font-size: 13px !important;
+}
