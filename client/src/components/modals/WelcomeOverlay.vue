@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       spotifyURL: baseURL + "connect_spotify",
-      logoURL: staticURL + '/assets/logo.png'
+      logoURL: staticURL + '/assets/Vivacio_Logo_Standard.png'
     };
   },
   methods: {

@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <b-navbar type="dark" variant="dark">
           <b-navbar-brand v-if="!$view.mobile">
-            <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="40px" />
+            <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="34px" />
           </b-navbar-brand>
           <b-navbar-brand @click="$router.push('/mobile')" v-if="$view.mobile">
             <img :src="logoURL" class="d-inline-block align-top logo" alt="Vivacio" height="40px" />
@@ -211,7 +211,7 @@ export default {
     return {
       radioImgURL: staticURL + '/assets/radio.svg',
       spotifyLogoURL: staticURL + '/assets/Spotify_Logo_RGB_White.png',
-      logoURL: staticURL + '/assets/logo.png',
+      logoURL: staticURL + '/assets/Vivacio_Logo_Standard.png',
       spotifyURL: baseURL + "connect_spotify",
       unreadPosts: null,
       omniSearchInput: null,
@@ -434,6 +434,11 @@ export default {
 .container-fluid {
   padding: 0px;
 }
+.logo {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-right: 0px;
+}
 .log-in-with .disabled {
   color: lightgrey !important;
 }
@@ -468,7 +473,7 @@ img {
 .search-icon{
   position: absolute;
   top: 21px;
-  left: calc(165.3px + 600px + 38px);
+  left: calc(165.3px + 600px + 38px + 4px);
   color: white;
 }
 .search-nav{
