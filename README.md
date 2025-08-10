@@ -1,4 +1,4 @@
-![featuregraphic4](https://user-images.githubusercontent.com/63013081/196046260-4c9737f8-9532-4df1-b31e-d20b589fc20d.png)
+![featuregraphic4](https://usc1.contabostorage.com/a36ba68caf9842799883275ab3ad3a88:composer-explorer.bucket/static/assets/Vivacio_Logo_Dark.png)
 
 Welcome to your Classical Music Portal. Explore composers from the Medieval to the present.
 Listen to works on Spotify, made navigable for Classical music.
