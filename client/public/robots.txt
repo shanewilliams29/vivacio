@@ -19,4 +19,4 @@ Disallow: /user_list
 
 # ---- Sitemap ----
 # Generate one (e.g., with your Flask server or a GitHub-Action)
-# Sitemap: https://composerexplorer.com/sitemap.xml
+# Sitemap: https://vivacio.app/sitemap.xml
