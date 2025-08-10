@@ -26,9 +26,8 @@ def test_login():
 
 @bp.route('/connect_spotify')
 def connect_spotify():
-    # url = sp.authorize()
-    # return redirect(url)
-    return Config.SPOTIFY_REDIRECT_URL
+    url = sp.authorize()
+    return redirect(url)
 
 
 @bp.route('/spotify')  # landing page from Spotify auth, app deep link
