@@ -17,7 +17,13 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    // The public landing page at / is served by Flask (landing.html).
+    // Inside the SPA (and on the dev server), / goes straight to the app.
     path: '/',
+    redirect: { path: '/browse' }
+  },
+  {
+    path: '/browse',
     name: 'home',
     component: HomeView
   },

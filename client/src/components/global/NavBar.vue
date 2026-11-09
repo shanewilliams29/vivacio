@@ -11,7 +11,7 @@
           </b-navbar-brand>
           <div v-if="!$view.mobile">
             <b-nav pills class="navbar-items buttons-nav">
-              <b-nav-item id="home" :active='$route.path == "/"' @click="$router.push('/')">
+              <b-nav-item id="home" :active='$route.name == "home"' @click="$router.push('/browse')">
                 <b-icon-music-note-list></b-icon-music-note-list>&nbsp;&nbsp;Browse
               </b-nav-item>
               <b-nav-item id="performer" :active='$route.name == "performers"' @click="$router.push('/performers')">
@@ -330,7 +330,7 @@ export default {
         let delay = 0;
         if (this.$route.name != "home") {
           delay = 200;
-          this.$router.push("/?search=" + composer.name_short);
+          this.$router.push("/browse?search=" + composer.name_short);
         }
         setTimeout(function(){
           eventBus.$emit("fireComposerOmniSearch", composer);
@@ -345,7 +345,7 @@ export default {
         let delay = 0;
         if (this.$route.name != "home") {
           delay = 200;
-          this.$router.push("/?search=" + work.id);
+          this.$router.push("/browse?search=" + work.id);
         }
         setTimeout(function(){
           eventBus.$emit("fireWorkOmniSearch", work);

@@ -1,3 +1,4 @@
+import os
 from app import db, sp
 from flask import request, redirect, session, render_template, send_from_directory, current_app
 from flask_login import current_user
@@ -25,9 +26,33 @@ def before_app_request():
                                             + timedelta(minutes=50))
 
 
-@bp.route('/', defaults={'path': ''})
+def app_home_url():
+    """Where the app starts for this device."""
+    base = 'http://localhost:8080' if Config.MODE == "DEVELOPMENT" else ''
+    return base + ('/mobile' if is_mobile() else '/browse')
+
+
+@bp.route('/')
+def index():
+    # Signed-in listeners and the Android app (a WebView) skip the landing page.
+    user_agent = request.headers.get('User-Agent', '').lower()
+    if current_user.is_authenticated or '; wv)' in user_agent:
+        return redirect(app_home_url())
+
+    # Public, crawlable landing page. Served to every device (no mobile
+    # redirect) so search engines' smartphone crawlers index it too.
+    return current_app.send_static_file('landing.html')
+
+
 @bp.route("/<string:path>")
-def index(path):
+def app_page(path):
+    # This catch-all outranks Flask's static route for single-segment paths,
+    # so serve real files in dist (robots.txt, sitemap.xml, icons) directly.
+    if '.' in path:
+        static_folder = current_app.static_folder
+        if os.path.isfile(os.path.join(static_folder, path)):
+            return send_from_directory(static_folder, path)
+
     if is_mobile() and not session.get('mobile', False):
         session['mobile'] = 'true'
         if Config.MODE == "DEVELOPMENT":

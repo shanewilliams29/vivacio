@@ -48,7 +48,7 @@ export default {
         let delay = 0;
         if (this.$route.name != "home") {
           delay = 200;
-          this.$router.push("/?search=" + work.id);
+          this.$router.push("/browse?search=" + work.id);
         }
         setTimeout(function(){
           eventBus.$emit("fireWorkOmniSearch", work);

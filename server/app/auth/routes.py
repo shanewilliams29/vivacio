@@ -114,9 +114,9 @@ def login():
             return redirect('https://vivacio.app/mobile')
     else:
         if Config.MODE == "DEVELOPMENT":
-            return redirect("http://localhost:8080/")
+            return redirect("http://localhost:8080/browse")
         else:
-            return redirect("/")
+            return redirect("/browse")
 
 
 @bp.route('/log_out')

@@ -18,5 +18,4 @@ Disallow: /user_list
 # Crawl-delay: 5
 
 # ---- Sitemap ----
-# Generate one (e.g., with your Flask server or a GitHub-Action)
-# Sitemap: https://vivacio.app/sitemap.xml
+Sitemap: https://vivacio.app/sitemap.xml
